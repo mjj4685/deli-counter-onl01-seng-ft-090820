@@ -1,27 +1,19 @@
-
-def take_a_number(array, name)
-  katz_deli.push(name)
-  counter = 1
-    katz_deli.each_with_index do |name, counter|
-    puts "Welcome, #{name}. You are number #{counter} in line."
-    counter += 1
-  end
+def take_a_number(line, patron)
+  line.push(patron) # could say: "line << new_person"
+  puts "Welcome, #{patron}. You are number #{line.length} in line."
 end
 
-def now_serving(katz_deli, name)
-    katz_deli << (name)
-    puts "Currently serving #{name}."
-end
+take_a_number(katz_deli, "")
 
-def line(katz_deli)
-  if katz_deli.size == 0
-    puts "The line is currently empty."
+def now_serving(line)
+  if line.length == 0 
+    puts"There is nobody waiting to be served!"
   else
-  person = "The line is currently:"
-  katz_deli.each.with_index(1) do |name,i|
-   person << " #{i}. #{name}"
+    puts "Currently serving #{line[0]}." 
+    line.shift 
   end
-  puts person
- end
+end
 
- end
+
+puts now_serving(katz_deli)
+puts katz_deli

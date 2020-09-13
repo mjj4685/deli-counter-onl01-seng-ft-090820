@@ -19,7 +19,7 @@ def line(katz_deli)
   else
   person = "The line is currently: "
   katz_deli.each.with_index(1) do |name,i|
-   person << "#{i}. #{name}"
+   person << " #{i}. #{name}"
   end
   puts person
  end

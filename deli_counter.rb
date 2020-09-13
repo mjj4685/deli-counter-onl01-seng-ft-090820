@@ -1,9 +1,9 @@
 def line(patron)
   if patron.empty?
     puts "The line is currently empty."
-  else line_currently = "The line is currently: "
+  else line_currently = "The line is currently:"
     patron.each.with_index(1) do |person,i|
-      line_currently<<" #{i}. #{person}"
+      line_currently << " #{i}. #{person}"
     end
     puts line_currently
   end

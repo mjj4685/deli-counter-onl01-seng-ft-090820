@@ -1,5 +1,5 @@
 def take_a_number(line, patron)
-  line.push(patron) # could say: "line << new_person"
+  line.push(patron)
   puts "Welcome, #{patron}. You are number #{line.length} in line."
 end
 
@@ -13,7 +13,6 @@ def now_serving(line)
     line.shift
   end
 end
-
 
 puts now_serving(katz_deli)
 puts katz_deli

@@ -4,7 +4,7 @@ def line(patron)
   else line_currently = "This line is currently:"
     patron.each.with_index(1) do |person,i|
       line_currently<<"#{i}. #{person}"
-    end 
+    end
     puts line_currently
   end
 end

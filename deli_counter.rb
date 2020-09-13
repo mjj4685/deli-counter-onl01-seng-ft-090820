@@ -5,6 +5,7 @@ def take_a_number(array, name)
     puts "Welcome, #{name}. You are number #{counter} in line."
     counter += 1
   end
+end
 
 def now_serving(katz_deli, name)
     katz_deli << (name)

@@ -1,3 +1,6 @@
+
+
+
 def take_a_number(array, name)
   katz_deli.push(name)
   counter = 1

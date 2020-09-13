@@ -18,7 +18,7 @@ def line(katz_deli)
     puts "The line is currently empty."
   else
   person = "Currently serving #{katz_deli}."
-  katz_deli.each_with_index(1) do |person,i|
+  katz_deli.each.with_index(1) do |person,i|
    person << "#{i}. #{person}"
   end
  end

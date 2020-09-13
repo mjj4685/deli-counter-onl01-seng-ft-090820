@@ -19,6 +19,6 @@ def now_serving(patron)
     puts "There is nobody waiting to be served!"
   else
     puts "Currently serving #{patron.first}."
-    counter.shift
+    patron.shift
   end
 end
